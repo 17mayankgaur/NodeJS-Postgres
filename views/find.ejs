@@ -1,0 +1,13 @@
+<%- include('./partials/header'); -%>
+<h3 style="color:Green;">FIND DATA INTO DATABASE</h3>
+<form  class="row g-3"action="/find" method="post">
+<div class="col-md-12">
+  <label for="postId" class="form-label" >ID</label>
+  <input class="form-control" type="text" name="postId" required>
+  </div>
+<div class="col-md-12">
+<button  class="btn btn-success"type="submit" name="button">Find</button>
+</div>
+</form>
+
+<%- include('./partials/footer'); -%>

@@ -1,0 +1,25 @@
+<%- include('./partials/header'); -%>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Father</th>
+      <th scope="col">Mother</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="col"><%=studentFirstName%></td>
+      <td scope="col"><%=studentLastName%></td>
+      <td scope="col"><%=studentFatherName%></td>
+      <td scope="col"><%=studentMotherName%></td>
+      <td scope="col"><%=studentAddress%></td>
+      <td scope="col"><%=studentPhone%></td>
+    </tr>
+  </tbody>
+</table>
+<%- include('./partials/footer'); -%>

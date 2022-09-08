@@ -1,0 +1,29 @@
+<%- include('./partials/header'); -%>
+<h3 style="color:Green;">Welcome To DataBase</h3>
+ <table class="table  table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Father</th>
+      <th scope="col">Mother</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+      <% userdata.forEach(function(data){ %>
+    <tr>
+        <td scope="col"><%= data.id %></td>
+        <td scope="col"><%= data.first_name %></td>
+        <td scope="col"><%= data.last_name %></td>
+        <td scope="col"><%= data.father_name %></td>
+        <td scope="col"><%= data.mother_name %></td>
+        <td scope="col"><%= data.address%></td>
+        <td scope="col"><%= data.phone%></td>
+    </tr>
+      <%})%>
+  </tbody>
+</table>
+<%- include('./partials/footer'); -%>

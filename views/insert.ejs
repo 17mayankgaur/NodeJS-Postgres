@@ -1,0 +1,45 @@
+<%- include('./partials/header'); -%>
+
+<h3 style="color:Green;">INSERT DATA INTO DATABASE</h3>
+<form class="row g-3" action="/insert" method="post">
+  <div class="col-12">
+    <label for="postId" class="form-label">ID</label>
+    <input class="form-control" type="text" name="postId" required>
+  </div>
+
+  <div class="col-md-6">
+    <label for="postFirst_name">Frist name</label>
+    <input class="form-control" type="text" name="postFirst_name" required>
+  </div>
+
+  <div class="col-md-6">
+    <label for="postLast_name">Last name</label>
+    <input class="form-control" type="text" name="postLast_name" required>
+  </div>
+
+<div class="col-md-6">
+  <label for="postFather_name">Father name</label>
+  <input class="form-control" type="text" name="postFather_name" required>
+</div>
+
+  <div class="col-md-6">
+    <label for="postMother_name">Mother name</label>
+    <input class="form-control" type="text" name="postMother_name" required>
+  </div>
+
+  <div class="col-md-6">
+    <label for="postAddress">Address</label>
+    <input class="form-control" type="text" name="postAddress" required>
+  </div>
+
+  <div class="col-md-6">
+    <label for="postPhone">Phone</label>
+    <input class="form-control" type="text" name="postPhone" required>
+  </div>
+
+  <div class="col-12">
+  <button  class="btn btn-success"type="submit" name="button">INSERT</button>
+</div>
+</form>
+
+<%- include('./partials/footer'); -%>

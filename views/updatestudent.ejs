@@ -1,0 +1,41 @@
+<%- include('./partials/header'); -%>
+<form class="row g-3" action="/updatestudent" method="post">
+  <div class="col-12">
+    <label for="postId" class="form-label">ID</label>
+    <input class="form-control" type="text" name="postId" required value="<%=studentId%>"  ">
+  </div>
+
+  <div class="col-md-6">
+    <label for="postFirst_name">Frist name</label>
+    <input class="form-control" type="text" name="postFirst_name" required value="<%=studentFirstName%>"  ">
+  </div>
+
+  <div class="col-md-6">
+    <label for="postLast_name">Last name</label>
+    <input class="form-control" type="text" name="postLast_name" required value="<%=studentLastName%>"  ">
+</div>
+
+  <div class="col-md-6">
+  <label for="postFather_name">Father name</label>
+  <input class="form-control" type="text" name="postFather_name" required value="<%=studentFatherName%>" ">
+</div>
+
+  <div class="col-md-6">
+    <label for="postMother_name">Mother name</label>
+    <input class="form-control" type="text" name="postMother_name" required value="<%=studentMotherName%>"  ">
+</div>
+
+  <div class="col-md-6">
+    <label for="postAddress">Address</label>
+    <input class="form-control" type="text" name="postAddress" required value="<%=studentAddress%>"  ">
+  </div>
+
+  <div class="col-md-6">
+    <label for="postPhone">Phone</label>
+    <input class="form-control" type="text" name="postPhone" required value="<%=studentPhone%>"  ">
+  </div>
+<div class="col-12">
+  <button  class="btn btn-success"type="submit" name="button">Update</button>
+  </div>
+</form>
+<%- include('./partials/footer'); -%>
